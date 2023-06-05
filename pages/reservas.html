@@ -4,70 +4,124 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Cabañas del lago</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta name="description" content="Sitio web que permite realizar la reserva de las cabañas">
+        <meta name="keywords" content="Cabañas del lago, cabañas, reserva, lago, vacaciones, estadia, habitaciones">
+        <title>Cabañas del lago | Reservas</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                    <a class="nav-link active" href="reservas.html">Reservas</a>
-                    <a class="nav-link" href="cabañas.html">Cabañas</a>
-                    <a class="nav-link" href="galeria.html">Galeria</a>
-                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="img-fluid" href="../index.html"><img src="../img/logo.jpg" alt="Logo cabañas del lago"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="reservas.html">Reservas</a>
+                            <a class="nav-link" href="cabañas.html">Cabañas</a>
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </nav>
-        
-            <div class="bg-black pb-3">
-                <img src="../img/portada.png" class="rounded mx-auto d-block img-fluid" alt="...">
-                <p class="text-white text-center">LA MEJOR TARIFA 100% GARANTIZADA. Reservando en nuestra web todo son ventajas.</p>
-                <form>
-                    <div class="row text-white container-fluid">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="fecha-inicio">Check-In</label>
-                                <input type="date" class="form-control" id="fecha-inicio" name="fecha-inicio">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="fecha-fin">Check-Out</label>
-                                <input type="date" class="form-control" id="fecha-fin" name="fecha-fin">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="adultos">Adultos:</label>
-                                <input type="number" class="form-control" id="adultos" name="adultos">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="menores">Menores:</label>
-                                <input type="number" class="form-control" id="menores" name="menores">
-                            </div>
-                        </div>
+            <div class="frontFormat">
+                <img src="../img/portada.jpg" class="mx-auto d-block img-fluid" alt="Imagen de portada">
+                <p >LA MEJOR TARIFA 100% GARANTIZADA. Reservando en nuestra web todo son ventajas.</p>
+            </div>
+        </header>
+        <main>
+            <div class="container ">
+                <section class="disclaimerText">
+                    <h5>Políticas de Cancelación</h5>
+                    <p>
+                        El cliente puede cancelar la reserva de forma gratuita hasta 60 días antes de la fecha de llegada.<br>
+                        Si cancela fuera de plazo o si no se presenta, el cliente tendrá que pagar el precio total.
+                    </p>
+                    <h5>Información</h5>
+                    <p>
+                        Cuidamos cada detalle para que vivas con nosotros una experiencia única e inolvidable.<br>
+                        Ofrecemos muchos servicios sin cargo porque lo más importante para nosotros es que pases una excelente estadía y que vuelvas.
+                    </p>
+                    <ul>
+                        <li>Piscina climatizada con cubierta transparente y excelente vista al lago</li>
+                        <li>Jacuzzi exterior ubicado en el deck del jardín con vistas al lago</li>
+                        <li>Desayuno Buffet con pastelería y cosas ricas elaboradas con productos de la Patagonia</li>
+                        <li>Quincho con Parrilla para uso de los huéspedes</li>
+                        <li>Sala de masajes con un amplio menú de masajes y terapias naturales</li>
+                        <li>Sauna un espacio placentero para restablecer la armonía interior y continuar disfrutando del viaje</li>
+                        <li>Gimnasio equipado con aparatos</li>
+                        <li>Sala de Juegos con mesa de ping pong, pool y metegol</li>
+                    </ul>
+                    <h5>Otros Servicios</h5>
+                    <ul>
+                        <li>Estacionamiento descubierto</li>
+                        <li>Servicio de limpieza en todas las cabañas</li>
+                        <li>Wifi en todas las cabañas</li>
+                        <li>TV LCD con cable</li>
+                        <li>Área de recepción abierta las 24 horas</li>
+                        <li>Baño finlandés</li>
+                        <li>Área exterior de juegos para niños</li>
+                        <li>Computadora en la recepción</li>
+                        <li>Caja de seguridad digital</li>
+                        <li>Servicio de información turística</li>
+                        <li>Juegos de mesa y DVDs</li>
+                        <li>Traslados In/Out al aeropuerto (con cargo)</li>
+                    </ul>
+                </section>
+                <form class="row g-3 bookingForm">
+                    <div class="col-md-6">
+                        <label for="fecha-inicio">Check-In:</label>
+                        <input type="date" class="form-control" id="fecha-inicio" name="fecha-inicio">
                     </div>
-                    <div class="text-center mt-3">
-                        <button type="submit" class="btn btn-secondary">RESERVAR</button>
+                    <div class="col-md-6">
+                        <label for="fecha-fin">Check-Out:</label>
+                        <input type="date" class="form-control" id="fecha-fin" name="fecha-fin">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="adultos">Adultos:</label>
+                        <input type="number" class="form-control" id="adultos" name="adultos">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="menores">Menores:</label>
+                        <input type="number" class="form-control" id="menores" name="menores">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCabin" class="form-label">Cabaña</label>
+                        <select id="inputCabin" class="form-select">
+                            <option selected>Seleccionar</option>
+                            <option>Standar S</option>
+                            <option>Standar M</option>
+                            <option>Superior S</option>
+                            <option>Superior M</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCar" class="form-label">Automovil</label>
+                        <select id="inputCar" class="form-select">
+                            <option selected>Seleccionar</option>
+                            <option>Si</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@ejemplo.com">
+                    </div>
+                    <div id="bookingButton">
+                        <button type="submit" class="buttonFormat">IR A PAGO</button>
                     </div>
                 </form>
             </div>
-        </header>
-
-        <main>
         </main>
-
         <footer>
             <div class="container-fluid text-center bg-black text-white">
                 <div class="row align-items-start">

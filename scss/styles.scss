@@ -1,0 +1,84 @@
+@import "variables";
+
+.buttonFormat{
+    background-color: darken($bg-button, $amount: 20);
+    color: $text-button;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 250ms;
+}
+.buttonFormat:hover{
+    background-color: $bg-button;
+}
+
+.imageContainer{
+    overflow: hidden;
+}
+
+.imageTransform{
+    transition: 500ms;
+}
+.imageTransform:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.frontFormat{
+    background-color: $bg-front;
+    color: $text-front;
+    padding-bottom: 20px;
+
+    p{
+        text-align: center;
+    }
+}
+
+.mainFormat{
+    background-color: $bg-main;
+    color: $text-main;
+    margin-top: 20px;
+    text-align: center;
+
+    #travelImage{
+        margin-block: 20px;
+    }
+}
+
+.footerFormat{
+    background-color: $bg-footer;
+    color: $text-footer;
+    text-align: center;
+}
+
+#bookingButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.disclaimerText{
+    border: 1px solid #000;
+    margin-block: 20px;
+    padding: 20px;
+}
+
+.bookingForm{
+    background-color: $bg-front;
+    color: $text-front;
+    padding-block: 20px;
+}
+
+.servicesCardImage{
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.galeryFormat{
+    height: auto;
+    max-width: 700px;
+    overflow: hidden;
+    margin-block: 30px;
+}

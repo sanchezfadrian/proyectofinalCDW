@@ -4,44 +4,45 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Cabañas del lago</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta name="description" content="Sitio web que permite ver las diferentes opciones de cabañas que ofrecemos para reservar">
+        <meta name="keywords" content="Cabañas del lago, cabañas, reserva, lago, vacaciones, estadia, habitaciones">
+        <title>Cabañas del lago | Cabañas</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                    <a class="nav-link" href="reservas.html">Reservas</a>
-                    <a class="nav-link active" aria-current="page" href="cabañas.html">Cabañas</a>
-                    <a class="nav-link" href="galeria.html">Galeria</a>
-                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="img-fluid" href="../index.html"><img src="../img/logo.jpg" alt="Logo cabañas del lago"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="reservas.html">Reservas</a>
+                            <a class="nav-link active" aria-current="page" href="cabañas.html">Cabañas</a>
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </div>
                     </div>
                 </div>
-                </div>
             </nav>
-        
-            <div class="bg-black pb-3">
-                <img src="../img/cabañas_01.jpg" class="rounded mx-auto d-block img-fluid" alt="...">
-                <p class="text-white text-center">LA MEJOR TARIFA 100% GARANTIZADA. Reservando en nuestra web todo son ventajas.</p>
+            <div class="frontFormat">
+                <img src="../img/portada.jpg" class="mx-auto d-block img-fluid" alt="Imagen de portada">
+                <p >LA MEJOR TARIFA 100% GARANTIZADA. Reservando en nuestra web todo son ventajas.</p>
                 <form>
-                    <div class="row text-white container-fluid">
+                    <div class="row container-fluid">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="fecha-inicio">Check-In</label>
+                                <label for="fecha-inicio">Check-In:</label>
                                 <input type="date" class="form-control" id="fecha-inicio" name="fecha-inicio">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="fecha-fin">Check-Out</label>
+                                <label for="fecha-fin">Check-Out:</label>
                                 <input type="date" class="form-control" id="fecha-fin" name="fecha-fin">
                             </div>
                         </div>
@@ -58,31 +59,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-center mt-3">
-                        <button type="submit" class="btn btn-secondary">RESERVAR</button>
+                    <div id="bookingButton">
+                        <button type="submit" class="buttonFormat">RESERVAR</button>
                     </div>
                 </form>
             </div>
         </header>
         <main>
-            <div class="container-flex mt-3">
+            <div class="container-flex mt-3 animate__animated animate__fadeIn">
                 <div class="row row-cols-1 row-cols-md-2"></div>
-                    <div class="card mb-3">
+                    <div class="card mb-3 imageContainer">
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <div id="carousel0" class="carousel slide">
-                                    <div class="carousel-inner">
+                                    <div class="carousel-inner imageTransform">
                                         <div class="carousel-item active">
-                                            <img src="../img/StandardS_00.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/StandardS_00.jpg"><img src="../img/StandardS_00.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/StandardS_01.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/StandardS_01.jpg"><img src="../img/StandardS_01.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/StandardS_02.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/StandardS_02.jpg"><img src="../img/StandardS_02.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/StandardS_03.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/StandardS_03.jpg"><img src="../img/StandardS_03.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel0" data-bs-slide="prev">
@@ -110,22 +111,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3">
+                    <div class="card mb-3 imageContainer">
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <div id="carousel1" class="carousel slide">
-                                    <div class="carousel-inner">
+                                    <div class="carousel-inner imageTransform">
                                         <div class="carousel-item active">
-                                            <img src="../img/SuperiorS_00.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/SuperiorS_00.jpg"><img src="../img/SuperiorS_00.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/SuperiorS_01.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/SuperiorS_01.jpg"><img src="../img/SuperiorS_01.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/SuperiorS_02.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/SuperiorS_02.jpg"><img src="../img/SuperiorS_02.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/SuperiorS_03.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/SuperiorS_03.jpg"><img src="../img/SuperiorS_03.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
@@ -154,22 +155,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3">
+                    <div class="card mb-3 imageContainer">
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <div id="carousel2" class="carousel slide">
-                                    <div class="carousel-inner">
+                                    <div class="carousel-inner imageTransform">
                                         <div class="carousel-item active">
-                                            <img src="../img/StandarM_00.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/StandarM_00.jpg"><img src="../img/StandarM_00.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/StandarM_01.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/StandarM_01.jpg"><img src="../img/StandarM_01.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/StandarM_02.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/StandarM_02.jpg"><img src="../img/StandarM_02.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/StandarM_03.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/StandarM_03.jpg"><img src="../img/StandarM_03.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
@@ -198,22 +199,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3">
+                    <div class="card mb-3 imageContainer">
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <div id="carousel3" class="carousel slide">
-                                    <div class="carousel-inner">
+                                    <div class="carousel-inner imageTransform">
                                         <div class="carousel-item active">
-                                            <img src="../img/SuperiorM_00.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/SuperiorM_00.jpg"><img src="../img/SuperiorM_00.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/SuperiorM_01.jpg" class="d-block w-100" alt="...">
+                                            <a href="../img/SuperiorM_01.jpg"><img src="../img/SuperiorM_01.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/SuperiorM_02.jpg" class="d-block w-100" alt="...">
+                                            <a href="../img/SuperiorM_02.jpg"><img src="../img/SuperiorM_02.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../img/SuperiorM_03.jpeg" class="d-block w-100" alt="...">
+                                            <a href="../img/SuperiorM_03.jpg"><img src="../img/SuperiorM_03.jpg" class="d-block w-100" alt="Imagen de cabañas"></a>
                                         </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
@@ -246,7 +247,6 @@
                 </div>
             </div>
         </main>
-
         <footer>
             <div class="container-fluid text-center bg-black text-white">
                 <div class="row align-items-start">

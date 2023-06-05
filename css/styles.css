@@ -1,0 +1,88 @@
+/*Variables de colores del la portada*/
+/*Variables de colores los botones*/
+/*Variables de colores del bloque principal*/
+/*Variables de colores del pie de pagina*/
+.buttonFormat {
+  background-color: #721f0a;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.buttonFormat:hover {
+  background-color: #cf3913;
+}
+
+.imageContainer {
+  overflow: hidden;
+}
+
+.imageTransform {
+  transition: 500ms;
+}
+
+.imageTransform:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.frontFormat {
+  background-color: rgba(17, 17, 17, 0.9803921569);
+  color: rgba(219, 219, 219, 0.8980392157);
+  padding-bottom: 20px;
+}
+.frontFormat p {
+  text-align: center;
+}
+
+.mainFormat {
+  background-color: white;
+  color: rgba(17, 17, 17, 0.7333333333);
+  margin-top: 20px;
+  text-align: center;
+}
+.mainFormat #travelImage {
+  margin-block: 20px;
+}
+
+.footerFormat {
+  background-color: rgba(17, 17, 17, 0.9803921569);
+  color: white;
+  text-align: center;
+}
+
+#bookingButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.disclaimerText {
+  border: 1px solid #000;
+  margin-block: 20px;
+  padding: 20px;
+}
+
+.bookingForm {
+  background-color: rgba(17, 17, 17, 0.9803921569);
+  color: rgba(219, 219, 219, 0.8980392157);
+  padding-block: 20px;
+}
+
+.servicesCardImage {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.galeryFormat {
+  height: auto;
+  max-width: 700px;
+  overflow: hidden;
+  margin-block: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

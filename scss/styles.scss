@@ -1,16 +1,14 @@
-@import "variables";
+@import "colores";
 
-.buttonFormat{
-    background-color: darken($bg-button, $amount: 20);
-    color: $text-button;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 250ms;
-}
-.buttonFormat:hover{
-    background-color: $bg-button;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
 }
 
 .imageContainer{
@@ -28,10 +26,11 @@
 .frontFormat{
     background-color: $bg-front;
     color: $text-front;
-    padding-bottom: 20px;
+    border-radius: 50px;
 
     p{
         text-align: center;
+        padding-block: 20px;
     }
 }
 
@@ -50,25 +49,47 @@
     background-color: $bg-footer;
     color: $text-footer;
     text-align: center;
+    padding-block: 20px;
+
+    h5{
+        line-height: 3;
+    }
+    
+    p{
+        line-height: 0.75;
+    }
+
 }
 
-#bookingButton{
+.frontFormButton{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-}
+    padding-block: 20px;
 
-.disclaimerText{
-    border: 1px solid #000;
-    margin-block: 20px;
-    padding: 20px;
+    button{
+        background-color: darken($bg-button, $amount: 20);
+        color: $text-button;
+        padding: 5px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 250ms;
+    }
+
+    button:hover{
+        background-color: darken($bg-button, $amount: 0);
+        transform: scale(1.10);
+    }
 }
 
 .bookingForm{
-    background-color: $bg-front;
-    color: $text-front;
+    background-color: $bg-main;
+    border: 1px solid $border-form;
+    border-radius: 10px;
+    color: $text-main;
     padding-block: 20px;
+    margin-block: 20px;
 }
 
 .servicesCardImage{
@@ -81,4 +102,8 @@
     max-width: 700px;
     overflow: hidden;
     margin-block: 30px;
+}
+
+.serviceCards{
+    margin-block: 20px;
 }

@@ -12,25 +12,25 @@
     </head>
     <body>
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="img-fluid" href="index.html"><img src="img/logo.jpg" alt="Logo cabañas del lago"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            <a class="nav-link" href="pages/reservas.html">Reservas</a>
-                            <a class="nav-link" href="pages/cabañas.html">Cabañas</a>
-                            <a class="nav-link" href="pages/galeria.html">Galeria</a>
-                            <a class="nav-link" href="pages/servicios.html">Servicios</a>
-                        </div>
+            <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
+                <a href="index.html"><img src="img/logo.jpg" class="img-fluid" alt="Logo cabañas del lago"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" href="pages/cabañas.html">Cabañas</a>
+                        <a class="nav-link" href="pages/galeria.html">Galeria</a>
+                        <a class="nav-link" href="pages/reservas.html">Reservas</a>
+                        <a class="nav-link" href="pages/servicios.html">Servicios</a>
                     </div>
                 </div>
             </nav>
             <div class="frontFormat">
-                <img src="img/portada.jpg" class="mx-auto d-block img-fluid" alt="Imagen de portada">
+                <div class="container-fluid">
+                    <img src="img/portada.jpg" class="img-fluid w-100" alt="Imagen de portada">
+                </div>
                 <p >LA MEJOR TARIFA 100% GARANTIZADA. Reservando en nuestra web todo son ventajas.</p>
                 <form>
                     <div class="row container-fluid">
@@ -59,49 +59,52 @@
                             </div>
                         </div>
                     </div>
-                    <div id="bookingButton">
-                        <button type="submit" class="buttonFormat">RESERVAR</button>
+                    <div class="frontFormButton">
+                        <button type="submit">RESERVAR</button>
                     </div>
                 </form>
             </div>
         </header>
         <main class="mainFormat">
-            <div class="container">
+            <div class="container-fluid">
                 <h5>BIENVENIDOS A UN RINCON DE BARILOCHE FRENTE AL LAGO NAHUEL HUAPI</h5>
                 <p>Te invitamos a nuestro lugar en el mundo donde podrás descansar, desconectarte de la rutina y disfrutar de nuestra bellísima Patagonia. Somos apasionados de las experiencias de viajes y con la atención cálida y cuidadosa de nuestro staff vamos a hacer todo lo posible para que disfrutes de la espectacular naturaleza y que esta experiencia sea un recuerdo inolvidable.</p>
                 <p>Te esperamos!</p>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card imageContainer">
-                        <a href="pages/cabañas.html"> <img src="img/cabañas.jpg" class="card-img-top imageTransform" alt="Imagen de cabañas"> </a>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">CABAÑAS</h5>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card imageContainer">
+                            <a href="pages/cabañas.html"> <img src="img/cabañas.jpg" class="card-img-top imageTransform" alt="Imagen de cabañas"> </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">CABAÑAS</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card imageContainer">
+                            <a href="pages/servicios.html"> <img src="img/servicios.jpg" class="card-img-top imageTransform" alt="Imagen de servicios"> </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">SERVICIOS</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card imageContainer">
-                        <a href="pages/servicios.html"> <img src="img/servicios.jpg" class="card-img-top imageTransform" alt="Imagen de servicios"> </a>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">SERVICIOS</h5>
-                        </div>
-                    </div>
+                <div id="travelImage">
+                    <img src="img/travel_choice.jpg" class="img-fluid" alt="Imagen de traveller choice">
                 </div>
             </div>
-            <img id="travelImage" src="img/travel_choice.jpg" class="mx-auto d-block img-fluid" alt="Imagen de traveller choice">
         </main>
         <footer class="footerFormat">
             <div class="container-fluid">
                 <div class="row align-items-start">
                     <div class="col">
                         <h5>DONDE ESTAMOS</h5>
-                        <p>Avenida Siempreviva 742</p>
-                        <p>S. C. de Bariloche, Patagonia Argentina</p>
+                        <p>Av. Siempreviva 742 </p>
+                        <p>S. C. de Bariloche</p>
+                        <p>Patagonia Argentina</p>
                     </div>
                     <div class="col">
                         <h5>CONTACTO</h5>
-                        <p>+54 (294) 12344321 / 1111936</p>
+                        <p>+54 (294) 12344321</p>
                         <p>reservas@cdlago.com</p>
                     </div>
                 </div>

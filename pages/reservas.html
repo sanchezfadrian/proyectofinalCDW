@@ -12,68 +12,94 @@
     </head>
     <body>
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="img-fluid" href="../index.html"><img src="../img/logo.jpg" alt="Logo cabañas del lago"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                            <a class="nav-link active" aria-current="page" href="reservas.html">Reservas</a>
-                            <a class="nav-link" href="cabañas.html">Cabañas</a>
-                            <a class="nav-link" href="galeria.html">Galeria</a>
-                            <a class="nav-link" href="servicios.html">Servicios</a>
-                        </div>
+            <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
+                <a href="../index.html"><img src="../img/logo.jpg" class="img-fluid" alt="Logo cabañas del lago"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="cabañas.html">Cabañas</a>
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                        <a class="nav-link active" aria-current="page" href="reservas.html">Reservas</a>
+                        <a class="nav-link" href="servicios.html">Servicios</a>
                     </div>
                 </div>
             </nav>
             <div class="frontFormat">
-                <img src="../img/portada.jpg" class="mx-auto d-block img-fluid" alt="Imagen de portada">
+                <img src="../img/portada.jpg" class="img-fluid" alt="Imagen de portada">
                 <p >LA MEJOR TARIFA 100% GARANTIZADA. Reservando en nuestra web todo son ventajas.</p>
             </div>
         </header>
         <main>
-            <div class="container ">
-                <section class="disclaimerText">
-                    <h5>Políticas de Cancelación</h5>
-                    <p>
-                        El cliente puede cancelar la reserva de forma gratuita hasta 60 días antes de la fecha de llegada.<br>
-                        Si cancela fuera de plazo o si no se presenta, el cliente tendrá que pagar el precio total.
-                    </p>
-                    <h5>Información</h5>
-                    <p>
-                        Cuidamos cada detalle para que vivas con nosotros una experiencia única e inolvidable.<br>
-                        Ofrecemos muchos servicios sin cargo porque lo más importante para nosotros es que pases una excelente estadía y que vuelvas.
-                    </p>
-                    <ul>
-                        <li>Piscina climatizada con cubierta transparente y excelente vista al lago</li>
-                        <li>Jacuzzi exterior ubicado en el deck del jardín con vistas al lago</li>
-                        <li>Desayuno Buffet con pastelería y cosas ricas elaboradas con productos de la Patagonia</li>
-                        <li>Quincho con Parrilla para uso de los huéspedes</li>
-                        <li>Sala de masajes con un amplio menú de masajes y terapias naturales</li>
-                        <li>Sauna un espacio placentero para restablecer la armonía interior y continuar disfrutando del viaje</li>
-                        <li>Gimnasio equipado con aparatos</li>
-                        <li>Sala de Juegos con mesa de ping pong, pool y metegol</li>
-                    </ul>
-                    <h5>Otros Servicios</h5>
-                    <ul>
-                        <li>Estacionamiento descubierto</li>
-                        <li>Servicio de limpieza en todas las cabañas</li>
-                        <li>Wifi en todas las cabañas</li>
-                        <li>TV LCD con cable</li>
-                        <li>Área de recepción abierta las 24 horas</li>
-                        <li>Baño finlandés</li>
-                        <li>Área exterior de juegos para niños</li>
-                        <li>Computadora en la recepción</li>
-                        <li>Caja de seguridad digital</li>
-                        <li>Servicio de información turística</li>
-                        <li>Juegos de mesa y DVDs</li>
-                        <li>Traslados In/Out al aeropuerto (con cargo)</li>
-                    </ul>
-                </section>
-                <form class="row g-3 bookingForm">
+            <div class="accordion container" id="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Políticas de Cancelación
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>
+                                El cliente puede cancelar la reserva de forma gratuita hasta 60 días antes de la fecha de llegada.<br>
+                                Si cancela fuera de plazo o si no se presenta, el cliente tendrá que pagar el precio total.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Información
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Cuidamos cada detalle para que vivas con nosotros una experiencia única e inolvidable.</p>
+                            <ul>
+                                <li>Piscina climatizada con cubierta transparente y excelente vista al lago</li>
+                                <li>Jacuzzi exterior ubicado en el deck del jardín con vistas al lago</li>
+                                <li>Desayuno Buffet con pastelería y cosas ricas elaboradas con productos de la Patagonia</li>
+                                <li>Quincho con Parrilla para uso de los huéspedes</li>
+                                <li>Sala de masajes con un amplio menú de masajes y terapias naturales</li>
+                                <li>Sauna un espacio placentero para restablecer la armonía interior y continuar disfrutando del viaje</li>
+                                <li>Gimnasio equipado con aparatos</li>
+                                <li>Sala de Juegos con mesa de ping pong, pool y metegol</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Otros Servicios
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Ofrecemos muchos servicios sin cargo porque lo más importante para nosotros es que pases una excelente estadía y que vuelvas.</p>
+                            <ul>
+                                <li>Estacionamiento descubierto</li>
+                                <li>Servicio de limpieza en todas las cabañas</li>
+                                <li>Wifi en todas las cabañas</li>
+                                <li>TV LCD con cable</li>
+                                <li>Área de recepción abierta las 24 horas</li>
+                                <li>Baño finlandés</li>
+                                <li>Área exterior de juegos para niños</li>
+                                <li>Computadora en la recepción</li>
+                                <li>Caja de seguridad digital</li>
+                                <li>Servicio de información turística</li>
+                                <li>Juegos de mesa y DVDs</li>
+                                <li>Traslados In/Out al aeropuerto (con cargo)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="container bookingForm">
+                <form class="row g-3">
                     <div class="col-md-6">
                         <label for="fecha-inicio">Check-In:</label>
                         <input type="date" class="form-control" id="fecha-inicio" name="fecha-inicio">
@@ -116,29 +142,29 @@
                         <label class="form-label">Email</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@ejemplo.com">
                     </div>
-                    <div id="bookingButton">
-                        <button type="submit" class="buttonFormat">IR A PAGO</button>
+                    <div class="frontFormButton">
+                        <button type="submit">IR A PAGO</button>
                     </div>
                 </form>
             </div>
         </main>
-        <footer>
-            <div class="container-fluid text-center bg-black text-white">
+        <footer class="footerFormat">
+            <div class="container-fluid">
                 <div class="row align-items-start">
-                  <div class="col">
-                    <h4>DONDE ESTAMOS</h4>
-                    <p>Avenida Siempreviva 742</p>
-                    <p>S. C. de Bariloche, Patagonia Argentina</p>
-                  </div>
-                  <div class="col">
-                    <h4>CONTACTO</h4>
-                    <p>+54 (294) 12344321 / 1111936</p>
-                    <p>reservas@cdlago.com</p>
-                  </div>
+                    <div class="col">
+                        <h5>DONDE ESTAMOS</h5>
+                        <p>Av. Siempreviva 742 </p>
+                        <p>S. C. de Bariloche</p>
+                        <p>Patagonia Argentina</p>
+                    </div>
+                    <div class="col">
+                        <h5>CONTACTO</h5>
+                        <p>+54 (294) 12344321</p>
+                        <p>reservas@cdlago.com</p>
+                    </div>
                 </div>
-              </div>
+            </div>
         </footer>
-        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
 </html>

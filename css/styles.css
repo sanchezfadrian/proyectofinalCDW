@@ -2,18 +2,15 @@
 /*Variables de colores los botones*/
 /*Variables de colores del bloque principal*/
 /*Variables de colores del pie de pagina*/
-.buttonFormat {
-  background-color: #721f0a;
-  color: white;
-  padding: 5px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 250ms;
-}
-
-.buttonFormat:hover {
-  background-color: #cf3913;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
 }
 
 .imageContainer {
@@ -32,10 +29,11 @@
 .frontFormat {
   background-color: rgba(17, 17, 17, 0.9803921569);
   color: rgba(219, 219, 219, 0.8980392157);
-  padding-bottom: 20px;
+  border-radius: 50px;
 }
 .frontFormat p {
   text-align: center;
+  padding-block: 20px;
 }
 
 .mainFormat {
@@ -52,25 +50,42 @@
   background-color: rgba(17, 17, 17, 0.9803921569);
   color: white;
   text-align: center;
+  padding-block: 20px;
+}
+.footerFormat h5 {
+  line-height: 3;
+}
+.footerFormat p {
+  line-height: 0.75;
 }
 
-#bookingButton {
+.frontFormButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  padding-block: 20px;
 }
-
-.disclaimerText {
-  border: 1px solid #000;
-  margin-block: 20px;
-  padding: 20px;
+.frontFormButton button {
+  background-color: #721f0a;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 250ms;
+}
+.frontFormButton button:hover {
+  background-color: #cf3913;
+  transform: scale(1.1);
 }
 
 .bookingForm {
-  background-color: rgba(17, 17, 17, 0.9803921569);
-  color: rgba(219, 219, 219, 0.8980392157);
+  background-color: white;
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 10px;
+  color: rgba(17, 17, 17, 0.7333333333);
   padding-block: 20px;
+  margin-block: 20px;
 }
 
 .servicesCardImage {
@@ -83,6 +98,10 @@
   max-width: 700px;
   overflow: hidden;
   margin-block: 30px;
+}
+
+.serviceCards {
+  margin-block: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
